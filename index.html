@@ -57,8 +57,16 @@
   // controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
 
   /* Display a blue point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT latitude, longitude to re-position marker
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([48.8566, 2.3522]).addTo(map)
+  .bindPopup("Insert pop-up text here");
+  L.marker([52.2297, 21.0122]).addTo(map)
+  .bindPopup("Insert pop-up text here");
+  L.marker([48.859962, 2.326561]).addTo(map)
+  .bindPopup("Insert pop-up text here");
+  L.marker([52.5200, 13.4050]).addTo(map)
+  .bindPopup("Insert pop-up text here");
+  L.marker([59.3293, -18.0686]).addTo(map)
+  .bindPopup("Insert pop-up text here");
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   // var customLayer = L.geoJson(null, {
