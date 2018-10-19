@@ -34,7 +34,7 @@
   /* Set up the map with initial center and zoom level */
   var map = L.map('map', {
     center: [48.8566, 2.3522], // EDIT latitude, longitude to re-center map
-    zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    zoom: 2,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
 
@@ -58,15 +58,15 @@
 
   /* Display a blue point marker with pop-up text */
   L.marker([48.8566, 2.3522]).addTo(map)
-  .bindPopup("Insert pop-up text here");
+  .bindPopup("48.8566, 2.3522");
   L.marker([52.2297, 21.0122]).addTo(map)
-  .bindPopup("Insert pop-up text here");
+  .bindPopup("52.2297, 21.0122");
   L.marker([48.859962, 2.326561]).addTo(map)
-  .bindPopup("Insert pop-up text here");
+  .bindPopup("48.859962, 2.326561");
   L.marker([52.5200, 13.4050]).addTo(map)
-  .bindPopup("Insert pop-up text here");
+  .bindPopup("52.5200, 13.4050");
   L.marker([59.3293, -18.0686]).addTo(map)
-  .bindPopup("Insert pop-up text here");
+  .bindPopup("59.3293, -18.0686");
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   // var customLayer = L.geoJson(null, {
