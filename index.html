@@ -55,7 +55,7 @@
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
   }); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
   // controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
-    
+
     var houseIcon = L.icon({
     iconUrl: 'house-01-512.png',
     iconSize:     [38, 39], // size of the icon
@@ -69,22 +69,23 @@ var boneIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
   /* Display a blue point marker with pop-up text */
-  L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map)
-  L.marker([52.2297, 21.0122], {icon: houseIcon}).addTo(map)
-     L.marker([48.8525, 2.3417], {icon: boneIcon}).addTo(map)
-  L.marker([52.5200, 13.4050], {icon: houseIcon}).addTo(map)
-      L.marker([52.5200, 13.4053], {icon: boneIcon}).addTo(map)
-  L.marker([59.3293, 18.0686]).addTo(map)
-    L.marker([51.5, -0.09], {icon: houseIcon}).addTo(map)
-        L.marker([51.5115, 0.1160], {icon: boneIcon}).addTo(map)
-     L.marker([53.3498, -6.2603], {icon: houseIcon}).addTo(map)
-     L.marker([-33.9249, 18.4241], {icon: houseIcon}).addTo(map)
-    L.marker([51.5256, 0.1233], {icon: boneIcon}).addTo(map)
-        L.marker([43.0015, 41.0234], {icon: boneIcon}).addTo(map)
-        L.marker([51.5163, -0.2369], {icon: boneIcon}).addTo(map)
-      L.marker([59.3498, 18.0707], {icon: boneIcon}).addTo(map)
-    
-    
+  L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map) /*Saint Merri*/
+  L.marker([52.2297, 21.0122], {icon: houseIcon}).addTo(map)/*Warsaw*/
+     L.marker([48.8525, 2.3417], {icon: boneIcon}).addTo(map)/*Sorbonne*/ 
+  L.marker([52.5200, 13.4050], {icon: houseIcon}).addTo(map)/*Berlin*/
+      L.marker([52.5200, 13.4053], {icon: boneIcon}).addTo(map) /*University of Berlin*/
+  L.marker([59.3293, 18.0686]).addTo(map)/*Stockholm*/
+    L.marker([51.5, -0.09], {icon: houseIcon}).addTo(map)/*London*/
+        L.marker([51.5115, 0.1160], {icon: boneIcon}).addTo(map) /*Barking, UK*/
+     L.marker([53.3498, -6.2603], {icon: houseIcon}).addTo(map)/*Dublin*/
+     L.marker([-33.9249, 18.4241], {icon: houseIcon}).addTo(map) /*Capetown*/
+    L.marker([51.5256, 0.1233], {icon: boneIcon}).addTo(map) /*Barking, UK*/
+        L.marker([43.0015, 41.0234], {icon: boneIcon}).addTo(map) /*Sokhumi*/
+        L.marker([51.5163, -0.2369], {icon: boneIcon}).addTo(map) /*Shepards bush*/
+      L.marker([59.3498, 18.0707], {icon: boneIcon}).addTo(map) /*Royal Institute of Technology Stokholm*/
+      L.marker([52.2403, 21.0186]), {icon: boneIcon}).addTo(map) /*University of Warsaw*/
+
+
 
   /*Lise Meitner*/
   L.marker([48.2172, 16.3912], {icon: houseIcon}).addTo(map)
@@ -93,10 +94,47 @@ var boneIcon = L.icon({
   .bindPopup("<b>Lise Meitner | University of Vienna (1905) </b><br> Meitner became the second woman to receive her doctorate in Physics at the University in 1905.");
   L.marker([52.518056, 13.393333]).addTo(map)
   .bindPopup("<b>Lise Meitner | Humboldt University of Berlin (1905) </b><br> Moving to the university formerly known as Friedrich Wilhelm University in 1907, Meitner met Albert Einstein, Max Planck, and Otto Hahn, with whom she would collaborate with greatly in the future.");
-  
-/*Irena Szumiel*/
-   L.marker([52.2403, 21.0186], {icon: boneIcon}).addTo(map)
-    
+
+  /*Florence Stoney*/
+  L.marker([53.3498, -6.2603] {icon: houseIcon}).addTo(map)
+  .bindPopup("<b>Florence Stoney | Birth Place</b><br> Florence Stoney was born 7 October 1932 in Dublin, Ireland.");
+  L.marker([51.5256, -0.1233] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Florence Stoney | London School of Medicine for Women (1895-1898) </b><br> She attended the Royal College of Science and, since women in Ireland were unable to study medicine, moved to London to study at the London School of Medicine for Women. She obtained her MBBS with honours in 1895 and a Doctor of Medicine in 1898.");
+
+  /*Ellen Gleditsh*/
+  L.marker([57.8807, 7.4364] {icon: houseIcon}).addTo(map)
+  .bindPopup("<b>Ellen Gleditsh | Birth Place</b><br> Ellen Gleditsh was born 29 December 1879 in Mandal, Norway.");
+  L.marker([48.8525, 2.3417] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Ellen Gleditsh | Sorbonne (1905) </b><br> She Studied at the Sorbonne and work in Marie Curies laboratory from 1907 to 1912.");
+
+  /*Irena Szumiel*/
+  L.marker([52.1356, 0.0030] {icon: houseIcon}).addTo(map)
+  .bindPopup("<b>Irena Szumiel | Birth Place</b><br> Irena Szumiel was born 10 February, 1936 in Warsaw, Poland.");
+  L.marker([52.1425, 0.0109] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Irena Szumiel | University of Warsaw  (1960-1965) </b><br> From 1960 to 1968, she worked at the Department of Biochemistry at the University of Warsaw, then became a research fellow at the Institute of Nuclear Research , and in 1982 the Institute of Nuclear Chemistry and Technology established on its basis.");
+
+  /*Rosalind Franklin*/
+  L.marker([51.3026, -0.0739] {icon: houseIcon}).addTo(map)
+  .bindPopup("<b>Rosalind Franklin | Birth Place</b><br> Rosalind Franklin was born 25 July 1920 in Notting Hill, Londond.");
+  L.marker([48.2132, 16.3601] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Rosalind Franklin | King's Cross College, London (1951) </b><br> She became a research associate at King's College London in 1951 and worked on X-ray diffraction studies, which would eventually facilitate the double helix theory of the DNA");
+
+  /*Liliana Lubinska*/
+  L.marker([51.4637, 19.2717] {icon: houseIcon}).addTo(map)
+  .bindPopup("<b>Liliana Lubinska | Birth Place</b><br> Luliana Lubinska  was born 14 October 1904 in Łódź, Poland.");
+  L.marker([52.2403, 21.0186] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Liliana Lubinska | University of Warsaw (1923) </b><br> Lubińska entered the University of Warsaw to study biology in 1923, but a year later she transferred to the University of Paris, Sorbonne to continue her study of biological sciences.");
+  L.marker([48.5055, 2.2036] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b> Liliana Lubinska| Sorbonne </b><br> At Sorbonne she continued her study of biological sciences.");
+
+  /*Tikvah Alper*/
+  L.marker([-33.9249, 18.4241] {icon: houseIcon}).addTo(map)
+  .bindPopup("<b>Tikvah Alper | Birth Place</b><br> Tikvah Apler was born 22 January, 1909 in Capetown, South Africa.");
+  L.marker([52.5200, 13.4050] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Lise Meitner | University of Vienna (1905) </b><br> In 1929 She studied in Berlin with the nuclear physicist Lise Meitner in 1930–32, publishing a prize-winning paper on delta rays produced by alpha particles in 1933.");
+  L.marker([52.5200, 13.4050] {icon: boneIcon}).addTo(map)
+  .bindPopup("<b>Tikvah Alper | MRC Radiobiology Laboratories at the Hammersmith Hospital, London </b><br> In 1929 She studied in Berlin with the nuclear physicist Lise Meitner in 1930–32, publishing a prize-winning paper on delta rays produced by alpha particles in 1933.");
+
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   // var customLayer = L.geoJson(null, {
   //  onEachFeature: function(feature, layer) {
