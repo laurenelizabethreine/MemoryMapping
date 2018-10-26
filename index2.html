@@ -68,13 +68,11 @@ var boneIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
   /* Display a blue point marker with pop-up text */
-
 /*Irène Joliot-Curie*/
   L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map)
   .bindPopup("<b>Irène Joliot-Curie | Birth Place</b><br> Irène Joliot-Curie was born 12 September 1897 in Paris, France.")
   L.marker([48.843333, 2.344167], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Irène Joliot-Curie | Curie Institute</b><br> Joliot-Curie studied at the Radium Institute, built after her parents, after World War I. Here, she received her PhD in Science after completing her thesis about thesis the alpha decay of polonium.")
-
+  .bindPopup("<b>Irène Joliot-Curie | Curie Institute</b><br> Joliot-Curie studied at the Radium Institute, built after her parents, after World War I. Here, she received her PhD in Science after completing her thesis about thesis the alpha decay of polonium. Here, she also conducted a lot of her future research, including discovering artificial radioactivity, alongside her husband, Jean Frédéric Joliot-Curie. This discovery led to the Nobel Prize Chemistry in 1935.")
 /*Marie Skłodowska Curie*/
 L.marker([52.2297, 21.0122], {icon: houseIcon}).addTo(map)
   .bindPopup("<b>Marie Curie | Birth Place</b><br> Marie Curie was born 7 November 1867 in Warsaw, Poland (then Warsaw, Congress of Poland, Russian Empire).")
@@ -98,8 +96,8 @@ L.marker([52.518056, 13.393333], {icon: boneIcon}).addTo(map)
   .bindPopup("<b>Liliana Lubinska | University of Warsaw (1923) </b><br> Lubińska entered the University of Warsaw to study biology in 1923, but a year later she transferred to the University of Paris, Sorbonne to continue her study of biological sciences.");
   L.marker([48.5055, 2.2036], {icon: boneIcon}).addTo(map)
   .bindPopup("<b> Liliana Lubinska| Sorbonne </b><br> At Sorbonne she continued her study of biological sciences.");
-  
-    
+
+
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   // var customLayer = L.geoJson(null, {
   //  onEachFeature: function(feature, layer) {
