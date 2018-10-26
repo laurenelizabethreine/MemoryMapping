@@ -69,10 +69,10 @@ var boneIcon = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
   /* Display a blue point marker with pop-up text */
-    
+
  L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map) /*Saint Merri*/
   L.marker([52.2297, 21.0122], {icon: houseIcon}).addTo(map)/*Warsaw*/
-     L.marker([48.8525, 2.3417], {icon: boneIcon}).addTo(map)/*Sorbonne*/ 
+     L.marker([48.8525, 2.3417], {icon: boneIcon}).addTo(map)/*Sorbonne*/
   L.marker([52.5200, 13.4050], {icon: houseIcon}).addTo(map)/*Berlin*/
       L.marker([52.5200, 13.4053], {icon: boneIcon}).addTo(map) /*University of Berlin*/
   L.marker([59.3293, 18.0686]).addTo(map)/*Stockholm*/
@@ -86,8 +86,23 @@ var boneIcon = L.icon({
       L.marker([59.3498, 18.0707], {icon: boneIcon}).addTo(map) /*Royal Institute of Technology Stokholm*/
          L.marker([52.2403, 21.0186], {icon: boneIcon}).addTo(map) /*University of Warsaw*/
 
+/*Lise Meitner*/
+L.marker([48.2172, 16.3912], {icon: houseIcon}).addTo(map)
+.bindPopup("<b>Lise Meitner | Birth Place</b><br> Elise Meitner was born 7 November 1878 in Leopoldstadt, Vienna.");
+L.marker([48.2132, 16.3601], {icon: boneIcon}).addTo(map)
+.bindPopup("<b>Lise Meitner | University of Vienna (1905) </b><br> Meitner became the second woman to receive her doctorate in Physics at the University in 1905.");
+L.marker([52.518056, 13.393333], {icon: boneIcon}).addTo(map)
+.bindPopup("<b>Lise Meitner | Humboldt University of Berlin (1905) </b><br> Moving to the university formerly known as Friedrich Wilhelm University in 1907, Meitner met Albert Einstein, Max Planck, and Otto Hahn, with whom she would collaborate with greatly in the future.");
 
+/*Marie Skłodowska Curie*/
+L.marker([52.2297, 21.0122], {icon: houseIcon}).addTo(map)
+.bindPopup("<b>Marie Curie | Birth Place</b><br> Marie Curie was born 7 November 1867 in Warsaw, Poland (then Warsaw, Congress of Poland, Russian Empire).")
 
+/*Irène Joliot-Curie*/
+L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map)
+.bindPopup("<b>Irène Joliot-Curie | Birth Place</b><br> Irène Joliot-Curie was born 12 September 1897 in Paris, France.")
+L.marker([48.843333, 2.344167], {icon: boneIcon}).addTo(map)
+.bindPopup("<b>Irène Joliot-Curie | Curie Institute</b><br> Joliot-Curie studied at the Radium Institute, built after her parents, after World War I. Here, she received her PhD in Science after completing her thesis about thesis the alpha decay of polonium.")
 
 
 
