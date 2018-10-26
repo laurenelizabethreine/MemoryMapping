@@ -87,8 +87,7 @@ var boneIcon = L.icon({
     
 
   /*Lise Meitner*/
-  L.marker([48.2172, 16.3912]).addTo(map)
-  .bindPopup("<b>Lise Meitner | Birth Place</b><br> Elise Meitner was born 7 November 1878 in Leopoldstadt, Vienna.");
+  L.marker([48.2172, 16.3912], {icon: houseIcon}).addTo(map)("<b>Lise Meitner | Birth Place</b><br> Elise Meitner was born 7 November 1878 in Leopoldstadt, Vienna.");
   L.marker([48.2132, 16.3601]).addTo(map)
   .bindPopup("<b>Lise Meitner | University of Vienna (1905) </b><br> Meitner became the second woman to receive her doctorate in Physics at the University in 1905.");
   L.marker([52.518056, 13.393333]).addTo(map)
